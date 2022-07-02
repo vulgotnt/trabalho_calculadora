@@ -9,16 +9,16 @@ export default function App() {
   const [valor1, setValor1] = useState(0);
  
   function addNumeroAoVisor(num) {
-    setDadosVisor(dadosVisor + num);  // dadosVisor = dadosVisor + num;
+    setDadosVisor(dadosVisor + num);  
   }
    
   function limparVisor() {
-    setDadosVisor('');                // dadosVisor = '';
+    setDadosVisor('');                
   }
  
   function configOperacao(op) {
-    setOperacao(op);                  // operacao = op;
-    setValor1(Number(dadosVisor));    // valor1 = Number(dadosVisor);
+    setOperacao(op);                  
+    setValor1(Number(dadosVisor));    
     limparVisor();
   }
  
@@ -139,7 +139,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '  #B0C4DE',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
