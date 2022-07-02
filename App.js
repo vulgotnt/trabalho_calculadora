@@ -124,7 +124,7 @@ export default function App() {
           <Text style={styles.texto_botao}>/</Text>
         </TouchableOpacity>
  
-        <TouchableOpacity style={styles.botao_num}
+        <TouchableOpacity style={styles.botao_num1}
           onPress={() => executarOperacao()}>
           <Text style={styles.texto_botao}>=</Text>
         </TouchableOpacity>
@@ -139,17 +139,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
   },
  
   estilo_visor: {
+    backgroundColor: '#fff',
     borderWidth: 1,
     width: '95%',
     height: '15%',
     fontSize: 30,
-    borderRadius: 10,
+    borderRadius: 100,
   },
  
   view_linha: {
@@ -159,12 +160,23 @@ const styles = StyleSheet.create({
   },
  
   botao_num: {
+    backgroundColor: '#fff',
     borderWidth: 1,
     width: '25%',
     height: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 10,
+    borderRadius: 100,
+  },
+
+  botao_num1: {
+    backgroundColor: '#D75413',
+    borderWidth: 1,
+    width: '25%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 100,
   },
  
   texto_botao: {
